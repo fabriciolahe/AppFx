@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="328.0" prefWidth="539.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.controller.fxmlLoginController">
+   <children>
+      <Button fx:id="btnLogin" layoutX="305.0" layoutY="265.0" mnemonicParsing="false" onAction="#onLoginUser" prefHeight="31.0" prefWidth="95.0" text="Login" />
+      <Button fx:id="btnAnullo" layoutX="416.0" layoutY="265.0" mnemonicParsing="false" onAction="#onAnullo" prefHeight="31.0" prefWidth="95.0" text="Mbyll" />
+      <TextField fx:id="txtEmriPerdoruesit" alignment="CENTER" layoutX="322.0" layoutY="102.0" promptText="Emri Perdoruesit" />
+      <PasswordField fx:id="txtFjalekalim" alignment="CENTER" layoutX="322.0" layoutY="172.0" promptText="Fjalekalimi" />
+      <Label fx:id="lblEmriPerdoruesit" layoutX="188.0" layoutY="107.0" text="Emri Përdoruesit :" />
+      <Label fx:id="lblFjalekalimi" layoutX="228.0" layoutY="177.0" text="Fjalëkalimi :" />
+      <Label fx:id="lblNewPerdorues" alignment="CENTER" layoutX="322.0" layoutY="67.0" onMouseClicked="#onKrijoPerdorues" prefHeight="21.0" prefWidth="187.0" stylesheets="@../css/style.css" text="Krijo një përdorues te ri" textFill="#050505">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Label>
+      <Label layoutX="159.0" layoutY="14.0" text="Logohu ne Sistem">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPassword" layoutX="283.0" layoutY="211.0" prefHeight="21.0" prefWidth="235.0" textFill="#f51717" />
+      <Label fx:id="lblPerdorues" layoutX="276.0" layoutY="143.0" prefHeight="21.0" prefWidth="235.0" textFill="RED" />
+   </children>
+</AnchorPane>

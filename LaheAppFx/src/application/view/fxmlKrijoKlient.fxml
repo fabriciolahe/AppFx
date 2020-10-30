@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="381.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.controller.fxmlKrijoKlientController">
+   <children>
+      <GridPane layoutY="67.0" prefHeight="170.0" prefWidth="488.0" vgap="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="258.0" minWidth="10.0" prefWidth="107.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="405.0" minWidth="10.0" prefWidth="239.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label prefHeight="21.0" prefWidth="32.0" text="ID :" GridPane.halignment="RIGHT">
+               <GridPane.margin>
+                  <Insets right="6.0" />
+               </GridPane.margin>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="41.0" text="Emri :" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="6.0" />
+               </GridPane.margin>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="69.0" text="Mbiemri :" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="6.0" />
+               </GridPane.margin>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="82.0" text="Kompania :" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="6.0" />
+               </GridPane.margin>
+            </Label>
+            <Label alignment="CENTER_RIGHT" text="Nr Celulari :" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets right="6.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txtId" editable="false" promptText="ID" GridPane.columnIndex="1" />
+            <TextField fx:id="txtEmri" promptText="Emri" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtMbiemri" promptText="Mbiemri" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtKompania" promptText="Kompania" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="txtNrCelularit" promptText="Nr Celularit" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="50.0" right="90.0" />
+         </padding>
+      </GridPane>
+      <Button fx:id="btnShto" layoutX="101.0" layoutY="284.0" mnemonicParsing="false" onAction="#onSaveKlient" prefWidth="97.0" text="Shto" />
+      <Button fx:id="btnMbyll" layoutX="363.0" layoutY="284.0" mnemonicParsing="false" onAction="#onAnullo" prefWidth="97.0" text="Mbyll" />
+      <Label alignment="CENTER" layoutX="48.0" layoutY="4.0" prefHeight="44.0" prefWidth="443.0" text="Shto klient">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
